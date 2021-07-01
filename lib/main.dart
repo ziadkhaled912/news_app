@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:news_app/layout/app_layout.dart';
-import 'package:news_app/modules/shop_app/on_boarding/on_boarding_screen.dart';
 import 'package:news_app/shared/componants/constants.dart';
 import 'package:news_app/shared/cubit/cubit.dart';
 import 'package:news_app/shared/cubit/states.dart';
@@ -115,7 +114,7 @@ class MyApp extends StatelessWidget {
               ),
             ),
             themeMode: AppCubit.get(context).isDark ? ThemeMode.dark :ThemeMode.light,
-            home: OnBoardingScreen(),
+            home: AppLayout(),
           );
         },
       ),
